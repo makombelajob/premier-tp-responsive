@@ -1,0 +1,142 @@
+/* css avec avec variables, commentaires et indenté si possible */
+
+:root {
+    --bg-grey : #d9d9d9;
+    --bg-white : #fff;
+    --color-bd : #000;
+    --wdth-100 : 100%;
+    --wdth-50 : 50%;
+    --text-decor : none;
+    --text-aln : center;
+    --aln-itm : center;
+    --list-style: none;
+    --dsp-inline : inline;
+    --dsp-flex : flex;
+    --brd-btm :1px solid #000;
+
+}
+
+/* The main style of the body's web */
+body {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: auto;
+    font-style: normal;
+    color : #000;
+    margin : 0;
+    padding : 0;
+}
+
+/* Obligation of the background color for the body */
+section:nth-child(even) {
+    background-color: var(--bg-grey);
+}
+section:nth-child(odd) {
+    background-color : var(--bg-white);
+}
+
+/* the style of the header */
+header {
+    padding : 10px 20px ;
+    height: 30px; 
+    display: var(--dsp-flex);
+    justify-content : space-between;
+    align-items: var(--aln-itm);
+    border-bottom : var(--brd-btm);  
+    a {
+    text-decoration: var(--text-decoration);
+    color : var(--color-bd);
+    }
+    ul {
+        list-style : var(--list-style);
+        li {
+            display: var(--dsp-inline);
+            padding : 10px;
+        }
+    }
+} 
+
+/* the main style of the main tag */
+main {
+    
+    section {
+        /* This is the main style of accueil ID */
+        text-align: var(--text-aln);
+        &:last-of-type{
+            text-align: initial;
+        }
+        h1{
+            font-size : 30px;
+        }
+        &:first-child p {
+            padding : 25px 0 50px 0;
+            margin-bottom: 20px;
+            font-size : 20px;
+        }
+        ul {
+            list-style: var(--list-style);
+            padding : 10px 0 50px;
+            li {
+                display:  var(--dsp-inline);
+                padding : 10px 20px;
+                margin : 30px;
+            }    
+        }
+        a, .btn-main {
+            background-color: var(--bg-grey);
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px var(--color-bd);
+            padding : 10px 10px;
+            text-decoration: var(--text-decor);
+            margin : 20px;
+            
+        }
+        h2 {
+            grid-column: 1 / -1;
+        }
+        #real{
+            display: none;
+        }
+    }#real, #services { 
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        article {
+            display: flex;
+            flex-direction: column;
+            box-shadow: 2px 2px 5px var(--color-bd);
+            text-align : var(--text-aln);
+            align-items: var(--aln-itm);
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    #accueil {
+            border-bottom: 1px solid var(--color-bd);
+    }
+    #contact {
+        h2{
+            padding : 20px 0 10px;
+        }
+        fieldset {
+            border : none;
+            margin : 10px 10px 10px 10px;
+            input:not([type=checkbox]) , select, textarea {
+                width : 100%;
+                box-sizing : border-box;
+            }
+            label {
+                text-align: initial;
+            }
+        } form {
+            margin : 0 auto;
+            width : 100%;
+        }
+    }
+
+
+}
+
+/* This is the main style of services ID */      
