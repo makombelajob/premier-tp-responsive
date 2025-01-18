@@ -13,6 +13,7 @@
     --dsp-inline : inline;
     --dsp-flex : flex;
     --brd-btm :1px solid #000;
+    --bg-hover : #633131;
 
 }
 
@@ -42,10 +43,25 @@ header {
     display: var(--dsp-flex);
     justify-content : space-between;
     align-items: var(--aln-itm);
-    border-bottom : var(--brd-btm);  
+    border-bottom : var(--brd-btm); 
+    #title {
+        color: var(--color-bd);
+        padding : 10px 10px;
+    }
+    &>a:hover {
+        margin: 10px auto;
+        pointer-events: none;
+    }
     a {
     text-decoration: var(--text-decoration);
     color : var(--color-bd);
+    padding: 5px;
+    &:hover {
+        background-color: var(--bg-hover);
+        color: var(--bg-white);
+        margin : 10px auto;
+        border-radius: 2px;
+        }
     }
     ul {
         list-style : var(--list-style);
@@ -88,8 +104,11 @@ main {
             box-shadow: 2px 2px 10px var(--color-bd);
             padding : 10px 10px;
             text-decoration: var(--text-decor);
-            margin : 20px;
-            
+            margin : 20px; 
+        }
+        a:hover {
+            background-color: var(--bg-hover);
+            color: var(--bg-white);
         }
         h2 {
             grid-column: 1 / -1;
@@ -118,6 +137,7 @@ main {
     }
     #contact {
         h2{
+            text-align: var(--text-aln);
             padding : 20px 0 10px;
         }
         fieldset {
@@ -127,16 +147,31 @@ main {
                 width : 100%;
                 box-sizing : border-box;
             }
-            label {
-                text-align: initial;
-            }
         } form {
             margin : 0 auto;
             width : 100%;
         }
+        .center-btn {
+            text-align: var(--text-aln);
+            :hover {
+                background-color: var(--bg-hover);
+                color: var(--bg-white);
+            }
+        }
     }
-
-
 }
 
-/* This is the main style of services ID */      
+
+/* This is the main style of te footer */ 
+
+footer {
+    text-align: var(--text-aln);
+    a {
+        text-decoration: var(--text-decor);
+        color : var(--color-bd);
+        
+    }
+    :hover {
+        color : var(--bg-hover);
+    }
+}
