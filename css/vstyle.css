@@ -116,6 +116,7 @@ main {
             display: none;
         }
     }
+    /* the main displaying style for id real and services*/
     #real,
     #services {
         display: grid;
@@ -128,6 +129,7 @@ main {
             text-align: var(--text-aln);
             align-items: var(--aln-itm);
             margin-bottom : 15px;
+            padding-inline: 10px;
             img {
                 width: 100%;
             }
