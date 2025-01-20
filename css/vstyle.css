@@ -127,6 +127,7 @@ main {
             box-shadow: 2px 2px 5px var(--color-bd);
             text-align: var(--text-aln);
             align-items: var(--aln-itm);
+            padding: 5px;
             img {
                 width: 100%;
                 height: auto;
