@@ -48,7 +48,7 @@ header {
         padding: 10px 10px;
     }
     & > a:hover {
-        margin: 10px auto;
+        /* margin: 10px auto; */
         pointer-events: none;
     }
     a {
@@ -58,7 +58,7 @@ header {
         &:hover {
             background-color: var(--bg-hover);
             color: var(--bg-white);
-            margin: 10px auto;
+            /* margin: 10px auto; */
             border-radius: 2px;
         }
     }
@@ -127,10 +127,9 @@ main {
             box-shadow: 2px 2px 5px var(--color-bd);
             text-align: var(--text-aln);
             align-items: var(--aln-itm);
-            padding: 5px;
+            margin-bottom : 15px;
             img {
                 width: 100%;
-                height: auto;
             }
         }
     }
