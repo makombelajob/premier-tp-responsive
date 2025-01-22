@@ -232,9 +232,19 @@ footer {
                 font-size: 1.7rem;
             }
         }
+        /* changing style for form */
+        #contact {
+            h2 {
+                font-size: 4rem;
+            }
+            fieldset{
+                /* margin : 10px auto; */
+                label {
+                    font-size : 3rem;
+                }
+            }
+        }
     }
     
-    
-    
-
 }
+/* checking mofication */
