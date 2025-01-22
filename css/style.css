@@ -16,6 +16,7 @@
     --brd-btm: 1px solid #000;
     --bg-hover: #633131;
     font-size: 12px; /*default font size => 1rem=16px */
+    --bx-shdow : 2px 2px 4px var(--color-bd);
 }
 body {
     padding: 0;
@@ -58,16 +59,15 @@ main {
     /* main style for hero */
     #hero {
         /* border-bottom: 1px solid var(--color-bd); */
-    }
-    h1{
+        h1{
         text-align: var(--text-aln);
         font-size: 2rem;
-    }
-    p {
+        }
+        p {
         text-align: var(--text-aln);
         font-size: 1.8rem;
-    }
-    ul {
+        }
+        ul {
         list-style-type: none;
         display: var(--dsp-flex);
         flex-direction: column;
@@ -76,7 +76,7 @@ main {
             font-size: 1.7rem;
             padding: 10px;
             text-align: center;
-            box-shadow: 2px 2px 4px var(--color-bd);
+            box-shadow: var(--bx-shdow);
             border-radius: 5px;
             margin: 10px;
             width: 50%;
@@ -86,13 +86,16 @@ main {
                 color : var(--color-bd);
             }         
         }
-        li:not(.btn) {
+        li:not(.btn-main) {
             background-color: var(--bg-grey);
         }
-        .btn {
+        a {
             font-size: 1.6rem;
         }
     }
+    }
+    
+    
 
     /* main style for the body */
     /* this is not the good practice but i have to change it later */
@@ -101,7 +104,7 @@ main {
     }
     .grey:not(.form) {
         background-color: var(--bg-grey);
-        /* margin: 10px; */
+        margin: 10px;
     }
     .white{
         background-color: var(--bg-white);
@@ -115,4 +118,79 @@ main {
     .form {
         background-color: var(--bg-grey);
     }
- }
+    section{
+        padding-block: 10px;
+        display: var(--dsp-flex);
+        flex-direction: column;
+        justify-content: space-between;     
+        article {
+            background-color: var(--bg-white);
+            margin : 10px;
+            align-items: center;
+            display: var(--dsp-flex);
+            flex-direction: column; 
+            box-shadow: var(--bx-shdow);
+            h3 {
+                text-align: center;
+                font-size: 2rem;
+                margin-top: 15px;
+            }
+            p {
+                padding-inline : 10px;
+                margin-bottom: 20px;
+                font-size: 1.6rem;
+            }
+        }
+        .btn{
+            margin-bottom: 20px;
+            color: var(--color-bd);
+            box-shadow: var(--bx-shdow);
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 2rem;
+            width: 50%;
+            text-decoration: var(--text-decor);
+            background-color: var(--bg-grey);
+        }
+    }
+    .form {
+        fieldset{
+        margin : 10px 10px;
+        border :none;
+        input:not([type=checkbox]),
+        select,
+        textarea {
+            width : 100%;
+            box-sizing: border-box;
+            margin : 5px;
+            }
+            label, p {
+                font-size: 1.5rem;
+            }
+            .center-btn{
+                text-align: var(--text-aln);
+                .btn-main {
+                    background-color: var(--bg-white);
+                    padding: 20px 30px;
+                    margin: 10px;
+                    border-radius: 5px;
+                }
+            }
+        }
+        
+    } 
+    
+}
+
+/* the main style fo the footer */
+footer {
+    text-align: var(--text-aln);
+    a {
+        text-decoration: var(--text-decor);
+        color: var(--color-bd);
+    }
+    :hover {
+        color: purple;
+    }
+}
