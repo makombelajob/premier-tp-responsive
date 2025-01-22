@@ -15,7 +15,7 @@
     --dsp-grid : grid;
     --brd-btm: 1px solid #000;
     --bg-hover: #633131;
-    font-size: 12px; /*default font size => 1rem=16px */
+    font-size: 10px; /*default font size => 1rem=16px */
     --bx-shdow : 2px 2px 4px var(--color-bd);
 }
 body {
@@ -31,22 +31,22 @@ header {
         text-decoration: none;
         color: var(--color-bd);
         font-size: 2rem;
-        padding: 20px;
+        padding: 2rem;
     }
     #menu {
         #burger{
             position: absolute;
-            right: 10px;
-            top : 10px;
+            right: 1rem;
+            top : 1rem;
             font-size: 2rem;
-            padding: 5px;
+            padding: 0.5rem;
             border: 1px solid var(--color-bd);
-            border-radius: 10px;
+            border-radius: 1rem;
         }
         ul{
             list-style: none;
             display: var(--dsp-flex);
-            gap : 10px;
+            gap : 1rem;
             li {
                 display: none;
             }
@@ -227,6 +227,10 @@ footer {
             h2{
                 grid-column: 1 / -1;
                 font-size: 5rem;
+            }
+            article {
+                text-align: start;
+                margin : 1rem;
             }
             .btn{
                 font-size: 1.7rem;
