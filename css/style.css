@@ -199,14 +199,36 @@ footer {
     /* the main style of the header */
     header {
         /* height: 40px auto; */
+        justify-content: space-between;
+        #title {
+            font-size : 3rem;
+        }
         .burger {
             display: none;
+        }
+        #menu {
+            display: var(--dsp-flex);
+            align-items: center;
+            ul {
+                display: var(--dsp-flex);
+                gap : 2rem;
+                li {
+                    display: inline;
+                    font-size: 2rem;
+                    margin-right: 2rem;
+                    a {
+                        text-decoration: var(--text-decor);
+                        color : var(--color-bd)
+                    }
+                }
+            }
         }
     }
 
     main {
         /* mofidying style for hero */
         #hero {
+            padding-block :0;
             h1 {
                 font-size: 5rem;
             }
@@ -242,6 +264,9 @@ footer {
             .btn {
                 font-size: 1.7rem;
             }
+            p{
+                font-size: 1.7rem;
+            }
         }
         /* changing style for form */
         #contact {
@@ -256,10 +281,29 @@ footer {
                 .btn-main {
                     font-size: 3rem;
                 }
-                input,
+                input:not([type="checkbox"]),
                 select,
                 textarea {
-                    height: 2.5rem;
+                    width: 100%;
+                    text-align: var(--text-aln);
+                    font-size: 3rem;
+                }
+                input,
+                select {
+                    height: 5rem;
+                }
+                input[type="checkbox"]{
+                    width: 3rem;
+                    margin: 2rem;
+                }
+                .check-box{
+                    display: var(--dsp-grid);
+                    grid-template-columns: 1fr 3fr;
+                    p {
+                        grid-column: 1 / -1;
+                        margin-top :0;
+                        padding-left : 1rem
+                    }
                 }
             }
             p {
