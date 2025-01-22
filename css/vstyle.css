@@ -128,7 +128,7 @@ main {
             box-shadow: 2px 2px 5px var(--color-bd);
             text-align: var(--text-aln);
             align-items: var(--aln-itm);
-            margin-bottom : 15px;
+            margin-bottom: 15px;
             padding-inline: 10px;
             img {
                 width: 100%;
