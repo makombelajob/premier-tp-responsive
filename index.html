@@ -8,7 +8,7 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
             rel="stylesheet">
-        <link rel="stylesheet" href="css/vstyle.css">
+        <link rel="stylesheet" href="css/style.css">
         <!-- <link rel="stylesheet" href="css/style.css"> -->
         <title>jobrepair</title>
     </head>
@@ -16,6 +16,9 @@
         <header class="white">
             <a href="#" id="title">Mon site</a>
             <nav id="menu">
+                <div class="burger" id="burger">
+                        ☰
+                </div>
                 <ul>
                     <li><a href="#accueil">Accueil</a></li>
                     <li><a href="#services">Services</a></li>
@@ -26,12 +29,12 @@
         </header>
         <!-- This is the beginig of the web page  -->
         <main>
-            <section id="accueil" class="white">
+            <section id="hero" class="white">
                 <h1>Bienvenue sur mon site</h1>
                 <p>le site le plus joli au monde</p>
                 <ul>
                     <li><a href="#service">Mes service</a></li>
-                    <li><a href="#realisation">Mes réalisations</a></li>
+                    <li class="btn"><a href="#realisation" >Mes réalisations</a></li>
                 </ul>
             </section>
             <section id="services" class="grey">
@@ -129,7 +132,7 @@
                 </article>
             </section>
             <!-- Special section for contact -->
-            <section id="contact" class="grey">
+            <section id="contact" class="grey form">
                 <h2>Me contacter</h2>
                 <form action="POST">
                     <fieldset>
