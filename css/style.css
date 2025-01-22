@@ -58,7 +58,6 @@ header {
 main {
     /* main style for hero */
     #hero {
-        /* border-bottom: 1px solid var(--color-bd); */
         h1{
         text-align: var(--text-aln);
         font-size: 2rem;
@@ -104,7 +103,7 @@ main {
     }
     .grey:not(.form) {
         background-color: var(--bg-grey);
-        margin: 10px;
+        /* margin: 10px; */
     }
     .white{
         background-color: var(--bg-white);
