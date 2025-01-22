@@ -200,6 +200,41 @@ footer {
 @media (min-width : 768px) {
     /* the main style of the header */
 
-    /* mofidying style for hero */
+    
+    main{
+        /* mofidying style for hero */
+        #hero {
+            h1{
+                font-size: 5rem;
+            }
+            p{
+                font-size: 4rem;
+            }
+            ul {
+                display: var(--dsp-grid);
+                grid-template-columns: 1fr 1fr;
+                margin: 40px;
+                li {
+                    padding-inline: 40px;
+                }
+            }
+        }
+
+        /* the style of all article */
+        .grid {
+            display: var(--dsp-grid);
+            grid-template-columns: repeat(4, 1fr);
+            h2{
+                grid-column: 1 / -1;
+                font-size: 5rem;
+            }
+            .btn{
+                font-size: 1.7rem;
+            }
+        }
+    }
+    
+    
+    
 
 }
