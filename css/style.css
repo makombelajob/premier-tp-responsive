@@ -194,3 +194,13 @@ footer {
         color: purple;
     }
 }
+
+/* the style of the responsive */
+
+/* main style for 768 px screen */
+@media (min-width : 768px) {
+    /* the main style of the header */
+
+    /* mofidying style for hero */
+
+}
