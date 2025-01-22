@@ -71,6 +71,7 @@ main {
             display: var(--dsp-flex);
             flex-direction: column;
             align-items: center;
+            padding-left: :0px;
             li {
                 font-size: 1.7rem;
                 padding: 10px;
@@ -197,11 +198,9 @@ footer {
 @media (min-width: 768px) {
     /* the main style of the header */
     header {
-        height: 40px auto;
+        /* height: 40px auto; */
         .burger {
             display: none;
-        }
-        #menu {
         }
     }
 
@@ -218,6 +217,7 @@ footer {
                 display: var(--dsp-grid);
                 grid-template-columns: 1fr 1fr;
                 margin: 40px;
+                padding-right: 0;
                 li {
                     padding-inline: 40px;
                     a {
