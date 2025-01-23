@@ -301,12 +301,13 @@ footer {
                     margin: 2rem;
                 }
                 .check-box{
-                    display: var(--dsp-grid);
-                    grid-template-columns: 1fr 3fr;
-                    p {
-                        grid-column: 1 / -1;
-                        margin-top :0;
-                        padding-left : 1rem
+                    input, 
+                    label {
+                        display: inline;
+                    }
+                    .check {
+                        margin-top : 0;
+                        text-align: var(--text-aln);
                     }
                 }
             }
