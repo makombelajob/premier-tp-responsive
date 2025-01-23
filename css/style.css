@@ -190,6 +190,9 @@ footer {
     :hover {
         color: purple;
     }
+    p{
+        font-size: 1.6rem;
+    }
 }
 
 /* the style of the responsive */
