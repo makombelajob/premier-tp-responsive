@@ -300,11 +300,6 @@ footer {
                     width: 3rem;
                     margin: 2rem;
                 }
-                .check-box{
-                    input, 
-                    label {
-                        display: inline;
-                    }
                     .check {
                         margin-top : 0;
                         text-align: var(--text-aln);
