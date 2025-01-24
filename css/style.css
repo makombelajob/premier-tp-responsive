@@ -48,7 +48,7 @@ header {
         }
         /* class for displaying the menu */
         .open {
-            /* display: none; */
+            display: none;
             list-style : none;
             position: absolute;
             left :0;
