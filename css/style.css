@@ -51,12 +51,9 @@ header {
             display: none;
             list-style : none;
             position: absolute;
-            box-shadow: 2px 2px 4px var(--color-bd);
-            background-color: var(--bg-grey);
             left :0;
             right: 0;
             top : 65px;
-            box-shadow: var(--bx-shdow);
             border-radius: 1rem;
             li {
                 padding : 3px;
@@ -195,7 +192,7 @@ main {
             }
         }
     }
-}
+
 
 /* the main style fo the footer */
 footer {
@@ -241,8 +238,19 @@ footer {
                         color : var(--color-bd)
                     }
                 }
-            }
+            } 
+            .open {
+                display: block;
+                position: static;
+                li {
+                    padding: 10px;
+                    a {
+                      font-size: 2rem;  
+                    }
+                }
+            }       
         }
+        
     }
 
     main {
