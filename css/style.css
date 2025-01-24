@@ -310,7 +310,21 @@ footer {
                 }
                 input:not([type="checkbox"]),
                 select {
-                    height: rem;
+                    height: 5rem;
+                }
+                input[type="checkbox"]{
+                    width: 3rem;
+                    margin: 2rem;
+                }
+                .check-box{
+                    input, 
+                    label {
+                        display: inline;
+                    }
+                    .check {
+                        margin-top : 0;
+                        text-align: var(--text-aln);
+                    }
                 }
             }
             p {
