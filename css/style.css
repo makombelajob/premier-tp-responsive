@@ -214,6 +214,9 @@ footer {
 /* main style for 768 px screen */
 @media (min-width: 768px) {
     /* the main style of the header */
+    :root {
+        font-size: 10px;
+    }
     header {
         /* height: 40px auto; */
         justify-content: space-between;
@@ -245,7 +248,7 @@ footer {
                 li {
                     padding: 10px;
                     a {
-                      font-size: 2rem;  
+                      font-size: 2.6rem;  
                     }
                 }
             }       
