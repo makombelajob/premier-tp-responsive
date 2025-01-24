@@ -48,13 +48,15 @@ header {
         }
         /* class for displaying the menu */
         .open {
-            display: none;
+            /* display: none; */
             list-style : none;
             position: absolute;
             left :0;
             right: 0;
             top : 65px;
             border-radius: 1rem;
+            background-color: white;
+            border : 1px solid var(--color-bd);
             li {
                 padding : 3px;
                 a {
@@ -245,6 +247,7 @@ footer {
             .open {
                 display: block;
                 position: static;
+                border: none;
                 li {
                     padding: 10px;
                     a {
