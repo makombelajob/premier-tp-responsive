@@ -35,6 +35,7 @@ header {
     }
     #menu {
         #burger {
+            margin :0;
             position: absolute;
             right: 1rem;
             top: 1rem;
@@ -42,18 +43,32 @@ header {
             padding: 0.5rem;
             border: 1px solid var(--color-bd);
             border-radius: 1rem;
+            /* adding lines */
+            /* cursor: pointer; */
         }
-        ul {
-            list-style: none;
-            display: var(--dsp-flex);
-            gap: 1rem;
+        .open {
+            /* display: none; */
+            list-style : none;
+            position: absolute;
+            box-shadow: 2px 2px 4px var(--color-bd);
+            background-color: var(--bg-grey);
+            left :0;
+            right: 0;
+            top : 65px;
+            box-shadow: var(--bx-shdow);
+            border-radius: 1rem;
             li {
-                display: none;
+                padding : 3px;
+                a {
+                    text-decoration: none;
+                    color: var(--color-bd);
+                    font-size: 1.7rem;
+                }
             }
+
         }
     }
 }
-
 /* The main style of the body */
 main {
     /* main style for hero */
@@ -92,6 +107,7 @@ main {
             a {
                 font-size: 1.6rem;
             }
+        }
         }
     }
 
@@ -292,23 +308,9 @@ footer {
                     text-align: var(--text-aln);
                     font-size: 3rem;
                 }
-                input,
+                input:not([type="checkbox"]),
                 select {
-                    height: 5rem;
-                }
-                input[type="checkbox"]{
-                    width: 3rem;
-                    margin: 2rem;
-                }
-                .check-box{
-                    input, 
-                    label {
-                        display: inline;
-                    }
-                    .check {
-                        margin-top : 0;
-                        text-align: var(--text-aln);
-                    }
+                    height: rem;
                 }
             }
             p {
