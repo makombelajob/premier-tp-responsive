@@ -46,6 +46,7 @@ header {
             /* adding lines */
             /* cursor: pointer; */
         }
+        /* class for displaying the menu */
         .open {
             display: none;
             list-style : none;
